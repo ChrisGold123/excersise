@@ -1,7 +1,6 @@
 //exeone
 
 //day of the week
-function dokladnaData () {
 var today = new Date();
 var day = today.getDay();
 var dayList = ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwarte', 'Piątek', 'Sobota'];
@@ -39,7 +38,6 @@ if(hour===12 && prepand=== " AM ")
 }
 
 document.getElementById("exeone").innerHTML = "Today is " + dayList[day] + ".<br>" + "The time is: " + hour + ":" + minute + ":" + second + " " + prepand;
-}
 
 setInterval(dokladnaData(), 100)
 
