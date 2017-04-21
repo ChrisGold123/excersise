@@ -39,7 +39,7 @@ if(hour===12 && prepand=== " AM ")
 
 if(second < 10)
 {
-	second = second.append('0');
+	second = second.toString().prepend('0');
 }
 
 document.getElementById("exeone").innerHTML = "Today is " + dayList[day] + ".<br>" + "The time is: " + hour + ":" + minute + ":" + second + " " + prepand;
